@@ -1,1 +1,1 @@
-# lcwgs-acrocomia
+# lcWGS-Acrocomia
