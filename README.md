@@ -7,11 +7,11 @@ This repository contains all the Linux and R scripts used to perform the genomic
 1. [Pre-processing](01_preprocessing/)
 
    * [1.1. Demultiplex](01_preprocessing/1.1_demultiplex)
-   * [1.2. Created FastQC reportl](01_preprocessing/1.2_fastcq)
+   * [1.2. Created FastQC report](01_preprocessing/1.2_fastcq)
    * [1.3. Trimming](01_preprocessing/1.3_trimming)
 2. [Alignment and quality filtering](02_alignment/)
 
-   * [2.1. Demultiplex](02_alignment/2.1_aligment.sh)
+   * [2.1. Aligment](02_alignment/2.1_aligment.sh)
    * [2.2. Quality filters](02_alignment/2.2_quality_filters.sh)
    * 2.3. Calculated mean depth
      * [2.3.1. Calculated dept with samtools and angsd](02_alignment/2.3.1_depth.sh)
