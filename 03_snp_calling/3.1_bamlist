@@ -1,0 +1,9 @@
+(base) edmonge@dayhoff1:~/wgs_acrocomia/slurm_scripts/geno_likelihoods$ cat create_bam_list.sh
+OUT="/home/edmonge/wgs_acrocomia/duplicates"
+BAMLIST="/home/edmonge/wgs_acrocomia/bamlistmat"
+SAMPLES="/home/edmonge/wgs_acrocomia/samples.txt"
+
+
+while read sample; do
+    echo "$OUT/${sample}.dedup_clipoverlap.bam" >> $BAMLIST
+done < $SAMPLES
