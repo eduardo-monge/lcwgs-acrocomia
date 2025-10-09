@@ -5,5 +5,5 @@ Analysis to calculate, visualize, and perform linkage disequilibrium (LD) prunin
    * [4.1. Convert beagle file](4.1_convert_beagle.sh) - Bash script
    * [4.2. Calculated LD](4.2_calculated_LD.sh) - Using ngsLD
    * [4.3. Graph LD](4.3_Graph_LD.R) - Using R
-   * [4.4. Perform SNP prunin](4.4_pruning.sh) - Using [prune_graph](https://github.com/fgvieira/prune_graph) from ngsLD
+   * [4.4. Perform SNP pruning](4.4_pruning.sh) - Using [prune_graph](https://github.com/fgvieira/prune_graph) from ngsLD
    * [4.5. Created LD-prunned file for PCA](4.5_file_for_pca.R) - Using R
