@@ -27,6 +27,8 @@ This repository contains all the Linux and R scripts used to perform the genomic
 5. [Genomic structure analysis](05_structure/)
    * [3.1. Created BAM list](05_structure/3.1_bamlist)
    * [3.2. Calculated Genotype Likelihood (GL)](05_structure/3.1_genolike.sh)
+
+     
 X. [Genomic statics *per* population](04_structure/)
 X. [Demographic analysis](05_demography/)
 X. [Selection analysis](06_selection/)
