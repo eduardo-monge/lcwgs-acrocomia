@@ -1,0 +1,43 @@
+#!/bin/bash
+#SBATCH --job-name=aligment_acrocomia
+#SBATCH --partition=bigmem
+#SBATCH --ntasks-per-node=160
+#SBATCH --time=168:00:00
+#SBATCH --mem=400gb
+#SBATCH --error=aligment.err
+#SBATCH --output=aligment.out
+
+module load bwa
+module load samtools
+
+N=8
+SAMPLES=$(cat /media/STORAGE/smatheus/wgs/edu/build_loci/processing/samples.txt) #Arquivo de entrada com nome das sequencias
+GENOME="/home/edmonge/wgs_acrocomia/genome/macauba.chrs.fa"
+
+echo "INICIADO EM: "$(date) > aligment.log
+bwa index $GENOME
+
+#Para cada amostra, realiza os passos seguinte
+i=0
+for sample in $SAMPLES; do
+        echo "INICIANDO BWA-MEM PARA $sample EM: "$(date) >> aligment.log
+        RG="@RG\\tID:${sample}\\tSM:${sample}\\tLB:lib1\\tPL:Illumina\\tPU:${sample}"
+        ((i=i%N)); ((i++==0)) && wait;
+        #Aligment with bwa-mem
+            bwa mem -M -t 20 \
+        -R "$RG" \
+        $GENOME \
+        /home/edmonge/wgs_acrocomia/fastq/${sample}_R1_val_1.fq.gz \
+        /home/edmonge/wgs_acrocomia/fastq/${sample}_R2_val_2.fq.gz \
+        >/home/edmonge/wgs_acrocomia/aligment_sem_filtro/${sample}_mapped.sam &
+done && wait;
+
+i=0
+for sample in $SAMPLES; do
+        echo "CALCULANDO FLAGSTAT PARA $sample EM "$(date) >> asligment.log
+        ((i=i%N)); ((i++==0)) && wait;
+
+        #Calcular estadisticas
+        samtools flagstat /home/edmonge/wgs_acrocomia/aligment_sem_filtro/${sample}_mapped.sam \
+        > /home/edmonge/wgs_acrocomia/aligment_sem_filtro/${sample}_flagstat.txt &
+done && wait;
