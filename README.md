@@ -1,4 +1,4 @@
-# Scripts for Genomic Analyses of *Acrocomia* Species
+# Scripts for Genomic Analyses of *Acrocomia* Species using lcWGS data
 
 This repository contains all the Linux and R scripts used to perform the genomic analyses of *Acrocomia* species using low-coverage whole-genome sequencing (lcWGS) data.
 
