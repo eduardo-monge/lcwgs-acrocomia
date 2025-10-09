@@ -22,7 +22,7 @@ This repository contains all the Linux and R scripts used to perform the genomic
    * [4.1. Convert beagle file](04_ld_pruning/4.1_convert_beagle.sh)
    * [4.2. Calculated LD](04_ld_pruning/4.2_calculated_LD.sh)
    * [4.3. Graph LD](04_ld_pruning/4.3_Graph_LD.R)
-   * [4.4. Perform SNP prunin](04_ld_pruning/4.4_pruning.sh)
+   * [4.4. Perform SNP pruning](04_ld_pruning/4.4_pruning.sh)
    * [4.5. Created LD-prunned file for PCA](04_ld_pruning/4.5_file_for_pca.R)
 5. [Genomic structure analysis](05_structure/)
    * [3.1. Created BAM list](05_structure/3.1_bamlist)
