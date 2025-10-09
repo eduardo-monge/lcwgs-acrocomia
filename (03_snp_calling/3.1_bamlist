@@ -1,0 +1,8 @@
+OUT="/home/edmonge/wgs_acrocomia/duplicates"
+BAMLIST="/home/edmonge/wgs_acrocomia/bamlistmat"
+SAMPLES="/home/edmonge/wgs_acrocomia/samples.txt"
+
+
+while read sample; do
+    echo "$OUT/${sample}.dedup_clipoverlap.bam" >> $BAMLIST
+done < $SAMPLES
