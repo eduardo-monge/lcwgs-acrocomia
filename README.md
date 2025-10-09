@@ -6,9 +6,9 @@ This repository contains all the Linux and R scripts used to perform the genomic
 
 1. [Pre-processing](01_preprocessing/)
 
-   * [1.1 Demultiplex](01_preprocessing/1.1_demultiplex/)
-   * [1.2 Quality control](01_preprocessing/1.2_quality/)
-   * [1.3 Filtering](01_preprocessing/1.3_filtering/)
+   * [1.1 Demultiplex](01_preprocessing/1.1_demultiplex)
+   * [1.2 Quality control](01_preprocessing/1.2_fastcq)
+   * [1.3 Filtering](01_preprocessing/1.3_trimming)
 2. [Alignment](02_alignment/)
 3. [Genotype likelihood estimation (SNP calling)](03_snp_calling/)
 4. [Genomic structure analysis](04_structure/)
