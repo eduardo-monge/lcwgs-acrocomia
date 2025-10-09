@@ -15,11 +15,14 @@ This repository contains all the Linux and R scripts used to perform the genomic
    * [2.4. Calculated mean depth](02_alignment/2.4_depth.sh)
    * [2.5. Computated depth and statics in R](02_alignment/2.5.statics.R)
        
-4. [Genotype likelihood estimation (SNP calling)](03_snp_calling/)
+3. [Genotype likelihood estimation (SNP calling)](03_snp_calling/)
+   * [3.1. Created BAM list](03_snp_calling/3.1_bamlist)
+   * [3.2. Calculated Genotype Likelihood (GL)](03_snp_calling/3.1_genolike.sh)
 5. [Genomic structure analysis](04_structure/)
-6. [Demographic analysis](05_demography/)
-7. [Selection analysis](06_selection/)
-8. [Mitochondrial DNA (mtDNA) analysis](07_mtDNA/)
+6. [Genomic statics *per* population](04_structure/)
+7. [Demographic analysis](05_demography/)
+8. [Selection analysis](06_selection/)
+9. [Mitochondrial DNA (mtDNA) analysis](07_mtDNA/)
 
 ![Genomic workflow](images/workflow.png)
 
