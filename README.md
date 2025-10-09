@@ -13,9 +13,9 @@ This repository contains all the Linux and R scripts used to perform the genomic
 
    * [2.1. Demultiplex](02_alignment/2.1_aligment.sh)
    * [2.2. Quality filters](02_alignment/2.2_quality_filters.sh)
-   * [2.3. Calculated mean depth]
-   * * [2.3.1. Calculated dept with samtools and angsd](02_alignment/2.3.1_depth.sh)
-   * * [2.3.2. Computated depth in R](02_alignment/2.3.2_depth.r)
+   * 2.3. Calculated mean depth
+     * [2.3.1. Calculated dept with samtools and angsd](02_alignment/2.3.1_depth.sh)
+     * [2.3.2. Computated depth in R](02_alignment/2.3.2_depth.r)
        
 4. [Genotype likelihood estimation (SNP calling)](03_snp_calling/)
 5. [Genomic structure analysis](04_structure/)
