@@ -56,3 +56,36 @@ tibble(total_depth = total_depth, position = 1:length(total_depth))  %>%
   ggplot(aes(x = position, y = total_depth)) +
   geom_point(size = 0.1)
 dev.off()
+
+
+
+#Read and analyze flagstat
+flagstat_dir <- file.path("/home/edmonge/wgs_acrocomia/flagstat")
+flagstat_files <- list.files(flagstat_dir, pattern = "*.flagstat.txt", full.names = TRUE)
+
+parse_flagstat <- function(file) {
+  lines <- readLines(file)
+  extract_num <- function(x) as.numeric(sub(" .*", "", x))
+  data.frame(
+    sample = sub("\\.txt$", "", basename(file)),
+    total_reads         = extract_num(lines[1]),
+    primary_reads       = extract_num(lines[2]),
+    secondary_reads     = extract_num(lines[3]),
+    supplementary_reads = extract_num(lines[4]),
+    duplicates          = extract_num(lines[5]),
+    primary_duplicates  = extract_num(lines[6]),
+    mapped_reads        = extract_num(lines[7]),
+    mapped_primary      = extract_num(lines[8]),
+    stringsAsFactors = FALSE
+  )
+}
+flagstat_summary <- bind_rows(lapply(flagstat_files, parse_flagstat))
+
+flagstat_important <- flagstat_summary %>%
+  mutate(sample = str_remove(sample, "\\.flagstat$"))%>%
+  select(sample = sample,
+         total_reads_flagstat=total_reads,
+         primary_reads_total_reads_flagstat=primary_reads,
+         supplemnary_reads_flagstat=supplementary_reads,
+         mapped_reads_flagstat=mapped_reads,
+         mapped_primary_flagstat=mapped_primary)
