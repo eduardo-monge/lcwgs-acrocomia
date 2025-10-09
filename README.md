@@ -9,3 +9,5 @@ The general workflow included 4 steps:
 5. Demografic analysis
 6. Selection analysis
 7. mDNA analysis
+
+Each folder includes the corresponding scripts used in the analyses. No additional explanations or tutorials are provided; the goal is to ensure full transparency and reproducibility of the work.
