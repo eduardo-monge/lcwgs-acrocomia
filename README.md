@@ -1,13 +1,22 @@
-# lcWGS-Acrocomia
-This repository includes all the Linux and R scripts used to produce the genomic analysis of Acrocomia species using lcWGS data. 
+# Scripts for Genomic Analyses of *Acrocomia* Species
 
-The general workflow included 4 steps: 
-1. Pre-processing sequencing
-2. Aligment
-3. Genotype likelihood stimation (SNP calling)
-4. Genomic strucutre analysis
-5. Demografic analysis
-6. Selection analysis
-7. mDNA analysis
+This repository contains all the Linux and R scripts used to perform the genomic analyses of *Acrocomia* species using low-coverage whole-genome sequencing (lcWGS) data.
 
-Each folder includes the corresponding scripts used in the analyses. No additional explanations or tutorials are provided; the goal is to ensure full transparency and reproducibility of the work.
+## Workflow overview
+
+1. [Pre-processing](01_preprocessing/)
+
+   * [1.1 Demultiplex](01_preprocessing/1.1_demultiplex/)
+   * [1.2 Quality control](01_preprocessing/1.2_quality/)
+   * [1.3 Filtering](01_preprocessing/1.3_filtering/)
+2. [Alignment](02_alignment/)
+3. [Genotype likelihood estimation (SNP calling)](03_snp_calling/)
+4. [Genomic structure analysis](04_structure/)
+5. [Demographic analysis](05_demography/)
+6. [Selection analysis](06_selection/)
+7. [Mitochondrial DNA (mtDNA) analysis](07_mtDNA/)
+
+![Genomic workflow](images/workflow.png)
+
+Each folder includes the corresponding scripts used in the analyses.
+No tutorials are provided; this repository serves to ensure full transparency and reproducibility.
