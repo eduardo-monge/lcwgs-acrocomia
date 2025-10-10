@@ -25,9 +25,15 @@ This repository contains all the Linux and R scripts used to perform the genomic
    * [4.4. Perform SNP pruning](04_ld_pruning/4.4_pruning.sh)
    * [4.5. Created LD-prunned file for PCA](04_ld_pruning/4.5_file_for_pca.R)
 5. [Genomic structure analysis](05_structure/)
-   * [3.1. Created BAM list](05_structure/3.1_bamlist)
-   * [3.2. Calculated Genotype Likelihood (GL)](05_structure/3.1_genolike.sh)
-
+   * [5.1. PCA](05_structure/PCA/)
+     *  [5.1.1. Index SNP list](05_structure/PCA/5.1.1_index.sh)
+     *  [5.1.2. Created LD-pruned beagle](05_structure/PCA/5.1.2._ldbeagle.sh)
+     *  [5.1.3. Created LD-pruned PCA matrix](05_structure/PCA/5.1.3_pcamatrix.sh)
+     *  [5.1.4. Graph PCA](05_structure/PCA/5.1.4_pcamatrix.R)
+   * [5.2. ADMIXTURE](05_structure/OHANA/)
+     * [5.2.1. Convert to Ohana matrix](05_structure/OHANA/5.2.1_convert_ohana.sh)
+     * [5.2.2. Run Ohana](05_structure/OHANA/5.2.1_convert_ohana.sh)
+     * 5.2.3. Choose best K and consensous K matrix with [Clumpak](https://clumpak.tau.ac.il/bestK.html)     
      
 X. [Genomic statics *per* population](04_structure/)
 X. [Demographic analysis](05_demography/)
