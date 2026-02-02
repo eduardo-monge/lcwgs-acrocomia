@@ -1,4 +1,4 @@
-# Estatísticas genômicas
+# Genomic statistics
 Here are the scripts for calculating population statistics (Nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D.) with ANGSD, as well as Ho and FIS from the data. Also included are global and windowed FST statistics, including Mantel analysis for calculating differentiation by distance. 
 
    * [6.1. Nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D](06_stadistics/)
