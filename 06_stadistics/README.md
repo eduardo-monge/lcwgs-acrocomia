@@ -1,0 +1,17 @@
+Here are the scripts for calculating population statistics (Nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D.) with ANGSD, as well as Ho and FIS from the data. Also included are global and windowed FST statistics, including Mantel analysis for calculating differentiation by distance. 
+
+ 6. [Genomic statics *per* population](06_stadistics/)
+   * [6.1. Nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D](06_stadistics/)
+       *  [6.1.1. Calculate SAF per population](06_stadistics/5.1.1_index.sh)
+       *  [6.1.2. Created LD-pruned beagle](06_stadistics//5.1.2._ldbeagle.sh)
+       *  [6.1.3. Created LD-pruned PCA matrix](06_stadistics//5.1.3_pcamatrix.sh)
+       *  [6.1.4. Graph PCA](06_stadistics//5.1.4_pcamatrix.R)
+   * [6.2. Heterozygous sites (Ho)](06_stadistics/)
+     * [6.2.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.2.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+   * [6.3. Inbreeding coefficient (FIS)](06_stadistics/)
+     * [6.3.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.3.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+   * [6.4. Pairwise FST](06_stadistics/)
+     * [6.4.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.4.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
