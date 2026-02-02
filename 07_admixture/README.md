@@ -16,3 +16,4 @@ Here are the scripts for performing analyses related to admixture processes (all
    * 7.4. LD Decay
      * [7.4.1. Call the GL per population ](7.1.1_callGL.sh) - With ANGSD
      * [7.4.2. Calculate LD](7.4.2_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
+     * [7.4.2. Graph LD](7.4.3_graphLD.sh) - Using the RScript by ngsLD
