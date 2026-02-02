@@ -2,7 +2,7 @@
 Here are the scripts for performing analyses related to admixture processes (allele exchange) and changes in population demographics. 
 
    * 7.1. Distance-based phylogeny
-       *  [7.1.1. Estimate pairwise genetic distances](7.1.1_doSaf.sh) - With [ngsDist](https://github.com/fgvieira/ngsDist?tab=readme-ov-file)
+       *  [7.1.1. Estimate pairwise genetic distances](7.1.1_ngsDist.sh) - With [ngsDist](https://github.com/fgvieira/ngsDist?tab=readme-ov-file)
        *  [7.1.2. Wstimate the distance-based phylogeny using BioNJ](7.1.2._realSFS.sh) - With [FastME](http://atgc.lirmm.fr/fastme/)
        *  [7.1.3. Place supports on the final tree](7.1.3_calculates_theta.sh) - With [RAxML-NG](https://github.com/amkozlov/raxml-ng)
    * 7.2. D statistics (ABBA-BABA test) (Ho)
