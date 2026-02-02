@@ -13,9 +13,9 @@ Here are the scripts for calculating population statistics (Nucleotide diversity
      * [6.2.1. Calculated MAF file per population](6.2.1_callmaf.sh) - With ANGSD
      * [6.2.2. Create pos file based on the MAF file](6.2.2_create_pos.sh) - Bash script
      * [6.2.3. Call SAF based on position file (pos file)](6.2.3_doSaf.sh) - With ANGSD
-     * [6.2.4. Convert to Ohana matrix](6.2.4_calculate_het.sh) - ANGSD & Bash script
+     * [6.2.4. Calculated HET](6.2.4_calculate_het.sh) - ANGSD & Bash script
    * [6.3. Inbreeding coefficient (FIS)]- Using [ngsF-HMM](https://github.com/fgvieira/ngsF-HMM)
-     * [6.3.1. Convert to Ohana matrix](6.3.1_f-HMM.sh) - With ngsF-HMM
+     * [6.3.1. Calculated FIS and IBD](6.3.1_f-HMM.sh) - With ngsF-HMM
    * [6.4. Pairwise FST]
      * [6.4.1. Calculate SAF per population (Same as 6.1.1.)](6.1.1_doSaf.sh) - With ANGSD
      * [6.4.2. Calculate 2D-SFS](6.4.2_2DSFS.sh) - With ANGSD
