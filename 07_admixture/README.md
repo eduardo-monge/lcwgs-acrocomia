@@ -12,7 +12,7 @@ Here are the scripts for performing analyses related to admixture processes (all
      * [7.3.1. Stimate MAF file per population](7.3.1_doMAF.sh) - With ANGSD
      * [7.3.2. Converted to TreeMix](7.3.1_convert_files.py) - Using the scrip by [Rocha et al.](https://github.com/joanocha/ngsIntrogression/blob/master/input_for_treemix.py)
      * [7.3.3. Run TreeMix with replciates](7.3.1_treemix.sh)- With Treeemix
-     * [7.3.4. Graph the likelihood for each replciate](7.3.1_graph_llik.sh) - With R
+     * [7.3.4. Graph the likelihood for each replciate](7.3.1_graph_llik.R) - With R
    * 7.4. LD Decay
      * [7.4.1. Call the GL per population ](7.1.1_callGL.sh) - With ANGSD
      * [7.4.2. Calculate LD](7.4.2_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
