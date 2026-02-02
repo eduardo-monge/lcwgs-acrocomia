@@ -34,14 +34,34 @@ This repository contains all the Linux and R scripts used to perform the genomic
      * [5.2.1. Convert to Ohana matrix](05_structure/5.2.1_convert_ohana.sh)
      * [5.2.2. Run Ohana with replicates for each K](05_structure/5.2.2_ohana.sh)
      * 5.2.3. Choose best K and consensous K matrix with [Clumpak](https://clumpak.tau.ac.il/bestK.html)
-     * 5.2.4. Plot the Q matrix following the tutorial: [Make a BGP map](https://eriqande.github.io/make-a-BGP-map/Make-a-BGP-map-Notebook.nb.html)   
-     
-X. [Genomic statics *per* population](04_structure/)
-X. [Demographic analysis](05_demography/)
-X. [Selection analysis](06_selection/)
-X. [Mitochondrial DNA (mtDNA) analysis](07_mtDNA/)
+     * 5.2.4. Plot the Q matrix following the tutorial: [Make a BGP map](https://eriqande.github.io/make-a-BGP-map/Make-a-BGP-map-Notebook.nb.html)
+ 6. [Genomic statics *per* population](06_stadistics/)
+   * [6.1. Nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D](06_stadistics/)
+       *  [6.1.1. Index SNP list](06_stadistics//5.1.1_index.sh)
+       *  [6.1.2. Created LD-pruned beagle](06_stadistics//5.1.2._ldbeagle.sh)
+       *  [6.1.3. Created LD-pruned PCA matrix](06_stadistics//5.1.3_pcamatrix.sh)
+       *  [6.1.4. Graph PCA](06_stadistics//5.1.4_pcamatrix.R)
+   * [6.2. Heterozygous sites (Ho)](06_stadistics/)
+     * [6.2.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.2.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+   * [6.3. Inbreeding coefficient (FIS)](06_stadistics/)
+     * [6.3.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.3.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+   * [6.4. Pairwise FST](06_stadistics/)
+     * [6.4.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
+     * [6.4.1. Convert to Ohana matrix](06_stadistics/5.2.1_convert_ohana.sh)
 
-![Genomic workflow](images/workflow.png)
+
+heterozygous sites (Ho), the inbreeding
+coefficient (FIS), nucleotide diversity (π), Watterson’s θ (θw), and Tajima’s D.
+
+ 7. [Admixture and demographic analysis](04_structure/)
+    * [7.1. PCA](05_structure/)
+     *  [1.1.1. Index SNP list](05_structure/5.1.1_index.sh)
+     *  [5.1.2. Created LD-pruned beagle](05_structure/5.1.2._ldbeagle.sh)
+     *  [5.1.3. Created LD-pruned PCA matrix](05_structure/5.1.3_pcamatrix.sh)
+     *  [5.1.4. Graph PCA](05_structure/5.1.4_pcamatrix.R)
+     
 
 Each folder includes the corresponding scripts used in the analyses.
 No tutorials are provided; this repository serves to ensure full transparency and reproducibility.
