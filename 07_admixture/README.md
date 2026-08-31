@@ -15,7 +15,7 @@ Here are the scripts for performing analyses related to admixture processes (all
      * [7.3.3. Run TreeMix with replciates](7.3.3_treemix.sh)- With Treeemix
      * [7.3.4. Graph the likelihood for each replciate](7.3.4_graph_llik.R) - With R
      * [7.3.5. Run TreeMix for the final trees](7.3.5_final_trees.sh) - With Treeemix
-     * [7.3.6. Graph final trees and residuals](7.3.6_graph_final_trees.R) - With R
+     * [7.3.6. Graph final trees and residuals](7.3.6_graph_final_trees.R) - With R and the graph functions from Treeemix
    * 7.4. LD Decay
      * [7.4.1. Call the GL per population ](7.1.1_callGL.sh) - With ANGSD
      * [7.4.2. Calculate LD](7.4.2_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
