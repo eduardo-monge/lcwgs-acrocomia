@@ -15,5 +15,13 @@ Here are the scripts for performing analyses related the three methods for detec
     * [8.3.3. Final allele allel frequencies based on prior SFS](8.3.3_final_SFS.sh) - With ANGSD
     * [8.3.4. Gradient forest analysis per chromosome](8.3.4_gradintforest.R) - With [GradientForest](https://gradientforest.r-forge.r-project.org/biodiversity-survey.pdf) in R. Per chromosome due computational power.
     * [8.3.5. Sperman correlation filter and final enviromental selection](8.3.5_Sperman_correlation.R) - With R
-  * 8.4. BayPass
+  * 8.4. Baypass
+    * [8.4.1. Convert files for chunk analyises](8.4.1_do_maf.sh) - With bash. Due computanional restrictions
+    * [8.4.2. Run core model](8.4.2_do_maf.sh) - With ANGSD
+    * [8.4.3. Merge XtX across all chunks](8.4.3_do_maf.sh) - With ANGSD
+    * [8.4.4. POD_calibration](8.4.4_do_maf.sh) - With ANGSD
+    * [8.4.5. BayPass analyses](8.4.5_do_maf.sh) - With ANGSD
+    * [8.4.6. Call outliers based on XtX POD quantile](8.4.6_do_maf.sh) - With ANGSD
+    * [8.4.7. Genome-Environment Association analysis](8.4.7_do_maf.sh) - With ANGSD
+    * [8.4.8. Outleirs based on enviromental variables](8.4.8_do_maf.sh) - With ANGSD
   * 8.5 Concat
