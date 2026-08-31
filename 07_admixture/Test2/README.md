@@ -15,19 +15,19 @@ Files used for the Test 1: Roraima Bottleneck
   * [Model1a.est](model2a.est)
   * [Model1a.tpl](model2a.tpl)
 * Model B: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model2b.est](model2b.est)
+  * [Model2b.tpl](model2b.tpl)
 * Model C: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model2c.est](model2c.est)
+  * [Model2c.tpl](model2c.tpl)
 * Model D: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model2d.est](model2d.est)
+  * [Model2d.tpl](model2d.tpl)
 * Model E: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model2e.est](model2e.est)
+  * [Model2e.tpl](model2e.tpl)
 * Model F: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model2f.est](model2f.est)
+  * [Model2f.tpl](model2f.tpl)
 
     
