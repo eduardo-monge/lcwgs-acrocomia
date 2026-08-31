@@ -7,7 +7,7 @@
 * [7.6.1.6. Created files for bootstrap on winner model](7.6.1.6.created_files_boot.sh) - With bash 
 * [7.6.1.7. Run simulated bootstrap on winner model](7.6.1.7.boot_best_model.sh) - With fastsimcoal2
 * [7.6.1.8. Calculated bootstrap values on winner model](7.6.1.8.calc_boot.sh) -  With fastsimcoal2
-* [7.6.1.9. Collect bootstrap results](7.6.1.3.colect_boot.sh) -  With 
+* [7.6.1.9. Collect bootstrap results](7.6.1.3.colect_boot.sh) -  With bash
 
 Files used for the Test 1: Roraima Bottleneck
 * Obs file: [Model.obs](model1a.obs)
@@ -15,6 +15,6 @@ Files used for the Test 1: Roraima Bottleneck
   * [Model1a.est](model1a.est)
   * [Model1a.tpl](model1a.tpl)
 * Model B: Bottleneck
-  * [Model2a.est](model2b.est)
-  * [Model2a.tpl](model2b.tpl)
+  * [Model1b.est](model1b.est)
+  * [Model1b.tpl](model1b.tpl)
 
