@@ -5,8 +5,8 @@
 * [7.6.1.4. Run model b](7.6.1.4.run_model_a.sh) - With fastsimcoal2
 * [7.6.1.5. Select best model](7.6.1.5.select_best_model.sh) - With bash
 * [7.6.1.6. Created files for bootstrap on winner model](7.6.1.6.created_files_boot.sh) - With bash 
-* [7.6.1.7. Run bootstrap on winner model](7.6.1.7.boot_best_model.sh) - With fastsimcoal2
-* [7.6.1.8. Calculated bootstrap values on winner model](7.6.1.8.calc_boot.sh) - With bash
+* [7.6.1.7. Run simulated bootstrap on winner model](7.6.1.7.boot_best_model.sh) - With fastsimcoal2
+* [7.6.1.8. Calculated bootstrap values on winner model](7.6.1.8.calc_boot.sh) -  With fastsimcoal2
 
 Files used for the Test 1: Roraima Bottleneck
 * Model A: No Bottleneck
