@@ -1,0 +1,19 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name      #dist.   #min    #max
+1  NPOP_AMZ          logunif  50000   1000000   output
+1  NPOP_ROR          logunif  10000   500000    output
+1  NPOP_SE           logunif  50000   1000000   output
+1  N_DEEP_ANC        logunif  50000   2000000   output
+1  N_AR_ANC          logunif  500     50000     output
+1  TAR_DIV           logunif  10000   500000    output
+0  T_EXTRA_DEEP      logunif  100     200000    hide
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+1  T_DEEP_DIV  = TAR_DIV + T_EXTRA_DEEP            output
+0  RESIZE_AR   = N_AR_ANC / NPOP_AMZ               output
+0  RESIZE_ANC  = N_DEEP_ANC / N_AR_ANC             output
