@@ -9,6 +9,11 @@ Here are the scripts for performing analyses related the three methods for detec
     *  [8.2.1. Admixture-corrected allele frequencies (f-matrox)](8.2.1_f_matrix.sh) - With Ohana
     *  [8.2.2. Run pcadapt with 5 PCA](8.2.2_selscan.sh) - With Ohana
     *  [8.2.3. Per-population outliers SNPs](8.2.3_select_outliers.R) - With R. Based on [Chen et al. (2024)](https://www.science.org/doi/10.1126/sciadv.adh3425)
-  * 8.3. RandomForest
+  * 8.3. GradientForest
+    * [8.3.1. Infer previous allel frequencies](8.3.1_do_maf.sh) - With ANGSD
+    * [8.3.2. Prior SFS per population](8.3.2_prior_SFS.sh) - With ANGSD
+    * [8.3.3. Final allele allel frequencies based on prior SFS](8.3.3_final_SFS.sh) - With ANGSD
+    * [8.3.4. Gradient forest analysis per chromosome](8.3.4_gradintforest.R) - With [GradientForest](https://gradientforest.r-forge.r-project.org/biodiversity-survey.pdf) in R. Per chromosome due computational power.
+    * [8.3.5. Sperman correlation filter and final enviromental selection](8.3.5_Sperman_correlation.R) - With R
   * 8.4. BayPass
   * 8.5 Concat
