@@ -8,7 +8,7 @@ Here are the scripts for performing analyses related the three methods for detec
   * 8.2. Ohana
     *  [8.2.1. Admixture-corrected allele frequencies (f-matrox)](8.2.1_f_matrix.sh) - With Ohana
     *  [8.2.2. Run pcadapt with 5 PCA](8.2.2_selscan.sh) - With Ohana
-    *  [8.2.3. Per-population outliers SNPs](8.2.3_select_outliers.R) - With R
+    *  [8.2.3. Per-population outliers SNPs](8.2.3_select_outliers.R) - With R. Based on [Chen et al. (2024)](https://www.science.org/doi/epdf/10.1126/sciadv.adh3425)
   * 8.3. RandomForest
   * 8.4. BayPass
   * 8.5 Concat
