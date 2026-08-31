@@ -1,0 +1,57 @@
+# Population data file
+source("data/" + POP_NAME + "_data.Rev")
+obs_sfs = fnFoldSFS(obs_sfs)
+# Derived variables
+N_SITES = round(sum(obs_sfs))
+# Mutation rate: 2.9e-8 per site/year x 12 years/generation = 3.48e-7 per site/generation
+mu       = 3.48e-7
+GEN_TIME = 12
+output_dir = "output/" + POP_NAME + "/"
+# MCMC setup
+moves    = VectorMoves()
+monitors = VectorMonitors()
+# Multivariate normal move
+avmvn = mvAVMVN(weight=50)
+# iid Uniform prior on theta_k = 4 * Ne_k * mu
+# Tighter prior based on observed thetaW range (0.001-0.005) with headroom
+for (k in 1:(N_IND-1)) {
+    theta[k] ~ dnUnif(0.0, 0.01)
+    theta[k].setValue(0.003)        # informed starting value near observed thetaW
+    moves.append( mvScale(theta[k], weight=5) )
+    avmvn.addVariable(theta[k])
+}
+moves.append(avmvn)
+# StairwayPlot likelihood
+sfs ~ dnStairwayPlot(
+    theta,
+    numSites       = N_SITES,
+    numIndividuals = N_IND,
+    folded         = TRUE,
+    coding         = "all"
+)
+sfs.clamp(obs_sfs)
+# Derived quantities for output/plotting
+times         := sfs.getTimes()
+ordered_Ne    := rev(theta) / 4.0 / mu
+ordered_times := rev(times) / mu * GEN_TIME
+esfs          := sfs.getExpectedAlleleFrequencies()
+my_model = model(sfs)
+# Monitors
+monitors.append( mnModel(filename = output_dir + "StairwayPlot_iid.log",            printgen=10) )
+monitors.append( mnFile(ordered_Ne,    filename = output_dir + "StairwayPlot_iid_Ne.log",    printgen=10) )
+monitors.append( mnFile(ordered_times, filename = output_dir + "StairwayPlot_iid_times.log", printgen=10) )
+monitors.append( mnFile(esfs,          filename = output_dir + "StairwayPlot_iid_esfs.log",  printgen=10) )
+monitors.append( mnScreen(printgen=1000) )
+# 4 MCMC replicates for convergence checking
+# Increased burnin and run length for better convergence and tighter CIs
+my_mcmc = mcmc(my_model, monitors, moves, nruns=4, combine="mixed")
+my_mcmc.burnin(generations=50000,  tuningInterval=100)
+my_mcmc.run(generations=500000,    tuningInterval=200)
+my_mcmc.operatorSummary()
+# Leave-one-out cross-validation
+for (i in 1:4) {
+    cpo = ConditionalPosteriorOrdinate(filename = output_dir + "StairwayPlot_iid_esfs_run_" + i + ".log")
+    pred_prob = cpo.predictiveProbability(obs_sfs, log=FALSE)
+    print("Run " + i + " LOO-CV: " + pred_prob)
+}
+print("Done! Population: " + POP_NAME)
