@@ -21,3 +21,8 @@ Here are the scripts for performing analyses related to admixture processes (all
      * [7.4.2. Created files per population ](7.1.2_create_files.sh) - With bash
      * [7.4.3. Calculate LD](7.4.3_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
      * [7.4.4. Graph LD](7.4.4_graphLD.sh) - Using the [RScript](fit_LDdecay_mine.R) by ngsLD
+   * 7.5. Bayesian StairwayPlot for demographic histories
+     * [7.5.1. Convert SFS to RevBayes format](7.5.1_convert_to_rev.sh) - Addapted from [RevBayes](https://revbayes.github.io/tutorials/stairwayplot/)
+     * [7.5.2. Run StairwayPlot in RevBayes ](7.5.2_run_stairwayplot.sh) - With RevBayes
+     * [7.5.3. Graph final plot](7.5.3_graph.R) - with R using the [RevGadgets](https://revbayes.github.io/tutorials/intro/revgadgets) functions from RevBayes
+   * 7.6. FastCoal2
