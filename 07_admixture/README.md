@@ -18,5 +18,6 @@ Here are the scripts for performing analyses related to admixture processes (all
      * [7.3.6. Graph final trees and residuals](7.3.6_graph_final_trees.R) - With R and the graph functions from Treeemix
    * 7.4. LD Decay
      * [7.4.1. Call the GL per population ](7.1.1_callGL.sh) - With ANGSD
-     * [7.4.2. Calculate LD](7.4.2_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
-     * [7.4.2. Graph LD](7.4.3_graphLD.sh) - Using the RScript by ngsLD
+     * [7.4.1. Call the GL per population ](7.1.2_create_files.sh) - With bash
+     * [7.4.2. Calculate LD](7.4.3_ngsLD.sh) - With [ngsLD](https://github.com/fgvieira/ngsLD/tree/master)
+     * [7.4.2. Graph LD](7.4.4_graphLD.sh) - Using the RScript by ngsLD
