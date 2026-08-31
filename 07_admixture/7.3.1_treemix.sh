@@ -14,7 +14,7 @@ TREEDIR="/home/edmonge/wgs_acrocomia/analyses/TreeMix"
 
 
 for m in {0..10}; do
- for i in {1..100}; do
+ for i in {1..10}; do
  SEED=$RANDOM
  echo "START: m=$m i=$i at $(date)" >> "$LOG"
   $TREEMIX \
