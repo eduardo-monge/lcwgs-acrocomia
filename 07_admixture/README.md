@@ -26,6 +26,6 @@ Here are the scripts for performing analyses related to admixture processes (all
      * [7.5.2. Run StairwayPlot in RevBayes ](7.5.2_run_stairwayplot.sh) - With RevBayes using the [Parameters](stairwayplot_2.Rev) file
      * [7.5.3. Graph final plot](7.5.3_graph.R) - with R using the [RevGadgets](https://revbayes.github.io/tutorials/intro/revgadgets) functions from RevBayes
    * 7.6. Test demographic hypotheses with fastsimcoal2
-     * [7.6.1. Test 1: Roraima Bottleneck]
-     * [7.6.2. Test 2: Origin and admixture of _Acrocomia intumescens_]
-     * [7.6.3. Test 3: _Acrocomia aculeata events_ in Central America]
+     * [7.6.1. Test 1: Roraima Bottleneck](7.6.1.Test_1)
+     * [7.6.2. Test 2: Origin and admixture of _Acrocomia intumescens_](7.6.2.Test_1)
+     * [7.6.3. Test 3: _Acrocomia aculeata events_ in Central America](7.6.3.Test_1)
