@@ -1,8 +1,8 @@
 ## 7.6.2. Test 2: Origin and admixture of _Acrocomia intumescens_]
 * [7.6.2.1. Created 3DSFS](7.6.2.1.3DSFS.sh) - With REALSFS ANGSD
 * [7.6.2.2. Convert 3DSFSF to fastsimcoal2 format](7.6.2.2.convert_files.py) - With python
-* [7.6.2.3. Run model a](7.6.2.3.run_all_modells.sh) - With fastsimcoal2
-* [7.6.2.4. Run model b](7.6.2.4.run_model_a.sh) - With fastsimcoal2
+* [7.6.2.3. Parameters to run all modells](7.6.2.3.run_all_modells.sh) - With fastsimcoal2
+* [7.6.2.4. Array to run all models](7.6.2.4.run_models.sh) - With bash
 * [7.6.2.5. Select best model](7.6.2.5.select_best_model.sh) - With bash
 * [7.6.2.6. Created files for bootstrap on winner model](7.6.2.6.created_files_boot.sh) - With bash 
 * [7.6.2.7. Run simulated bootstrap on winner model](7.6.2.7.boot_best_model.sh) - With fastsimcoal2
