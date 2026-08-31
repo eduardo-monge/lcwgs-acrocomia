@@ -10,11 +10,11 @@
 * [7.6.1.9. Collect bootstrap results](7.6.1.3.colect_boot.sh) -  With 
 
 Files used for the Test 1: Roraima Bottleneck
+Obs file: * [Model1a.obs](model1a.obs)
 * Model A: No Bottleneck
   * [Model1a.est](model1a.est)
   * [Model1a.tpl](model1a.tpl)
-  * [Model1a.obs](model1a.obs)
 * Model B: Bottleneck
-  * [Model2a.est](model2a.est)
-  * [Model2a.tpl](model2a.tpl)
-  * [Model2a.obs](model2a.obs)
+  * [Model2a.est](model2b.est)
+  * [Model2a.tpl](model2b.tpl)
+
