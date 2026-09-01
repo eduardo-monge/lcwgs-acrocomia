@@ -31,7 +31,7 @@ Here are the scripts for performing analyses related the three methods for detec
     * 8.6.1. Annotation of terms Go and Kegg for the [proteins](https://figshare.com/articles/dataset/Macauba_CDS_Proteins_and_GFFs/29011160) from the [reference genome](https://www.nature.com/articles/s41597-026-07815-x) - With [eggNOG‑mapper3](https://eggnog-mapper.cgmlab.org)
     * [8.6.2. Create files for SNPs by methods](8.6.2_files_methods.sh) - With Bash
     * [8.6.3. Run functional annotation and enrichment analyses for the SNPs by methods](8.6.3_annot_method.R) - With R
-    * [8.6.4. Create files for the SNPs by populations](8.6.4_files_pops.R) - With Bash
+    * [8.6.4. Create files for the SNPs by populations](8.6.4_files_pops.sh) - With Bash
     * [8.6.5. Run functional annotation and enrichment analyses for the SNPs by popualtions](8.6.5_annot_pops.R) - With R
 
 
