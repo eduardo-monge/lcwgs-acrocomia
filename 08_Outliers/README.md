@@ -24,4 +24,6 @@ Here are the scripts for performing analyses related the three methods for detec
     * [8.4.6. Call outliers based on XtX POD quantile](8.4.6_out_pod.R) - With R
     * [8.4.7. Genome-Environment Association analysis](8.4.7_gea.sh) - With BayPass
     * [8.4.8. Outleirs based on enviromental variables](8.4.8_out_gea.R) - With R
-  * 8.5 Concat
+  * 8.5 Concatenate SNPs outliers by methods and populations
+    * [8.5.1. Concatenate SNPs by methods](8.5.1_concat_method.R) - With R
+    * [8.5.2. Concatenate SNPs by populations](8.5.2_concat_pops.R) - With R
