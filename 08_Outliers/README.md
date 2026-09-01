@@ -17,11 +17,11 @@ Here are the scripts for performing analyses related the three methods for detec
     * [8.3.5. Sperman correlation filter and final enviromental selection](8.3.5_Sperman_correlation.R) - With R
   * 8.4. Baypass
     * [8.4.1. Convert files for chunk analyises](8.4.1_convert.sh) - With bash. Due computanional restrictions
-    * [8.4.2. Run core model](8.4.2_core_model.sh) - With ANGSD
-    * [8.4.3. Merge XtX across all chunks](8.4.3_merge_xtx.sh) - With ANGSD
-    * [8.4.4. POD_calibration](8.4.4_pod.sh) - With ANGSD
-    * [8.4.5. BayPass analyses](8.4.5_baypass_maf.sh) - With ANGSD
-    * [8.4.6. Call outliers based on XtX POD quantile](8.4.6_out_pod.sh) - With ANGSD
-    * [8.4.7. Genome-Environment Association analysis](8.4.7_gea.sh) - With ANGSD
-    * [8.4.8. Outleirs based on enviromental variables](8.4.8_out_gea.sh) - With ANGSD
+    * [8.4.2. Run core model](8.4.2_core_model.sh) - With BayPass
+    * [8.4.3. Merge XtX across all chunks](8.4.3_merge_xtx.R) - With R
+    * [8.4.4. POD_calibration](8.4.4_pod.R) - With R
+    * [8.4.5. BayPass analyses](8.4.5_baypass.sh) - With BayPass
+    * [8.4.6. Call outliers based on XtX POD quantile](8.4.6_out_pod.R) - With R
+    * [8.4.7. Genome-Environment Association analysis](8.4.7_gea.sh) - With BayPass
+    * [8.4.8. Outleirs based on enviromental variables](8.4.8_out_gea.R) - With R
   * 8.5 Concat
