@@ -11,3 +11,4 @@ This repository contains all the Linux and R scripts used to perform the genomic
 5. [Genomic structure analysis](05_structure/)
 6. [Genomic statics *per* population](06_stadistics/)
 7. [Admixture and demographic analysis](07_admixture/)
+8. [Detection of putative outlier SNPs](08_outliers/)
